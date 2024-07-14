@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.daeae7bb.css",
+    "main.js": "/static/js/main.be7e2f3f.js",
+    "static/js/453.80efc53e.chunk.js": "/static/js/453.80efc53e.chunk.js",
+    "static/media/plutonium_fatlipmhl8ce.svg": "/static/media/plutonium_fatlipmhl8ce.c207073b761e695bc2fc306eecfcaa00.svg",
+    "index.html": "/index.html",
+    "main.daeae7bb.css.map": "/static/css/main.daeae7bb.css.map",
+    "main.be7e2f3f.js.map": "/static/js/main.be7e2f3f.js.map",
+    "453.80efc53e.chunk.js.map": "/static/js/453.80efc53e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.daeae7bb.css",
+    "static/js/main.be7e2f3f.js"
+  ]
+}

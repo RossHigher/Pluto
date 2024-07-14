@@ -1,0 +1,168 @@
+/* General Styling */
+.dev-mode {
+  padding: 20px;
+  background-color: #15202b;
+  color: #1da1f2;
+  font-family: 'Arial', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.dev-mode h2 {
+  text-align: center;
+  color: #1da1f2;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.dev-mode button {
+  background-color: #1da1f2;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dev-mode button svg {
+  margin-right: 8px;
+}
+
+.dev-mode button:hover {
+  background-color: #0d8bf1;
+  transform: scale(1.05);
+}
+
+.dev-mode button.active {
+  background-color: #0d8bf1;
+  color: #FFF;
+}
+
+.message, .result {
+  margin-top: 20px;
+  color: #1da1f2;
+  text-align: center;
+}
+
+.component-container {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.component-container.open {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1da1f2;
+}
+
+.input-group input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #1da1f2;
+  border-radius: 8px;
+  background-color: #1c2938;
+  color: #FFF;
+  margin: 0 auto;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0d8bf1;
+}
+
+/* Add animations */
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    max-height: 1000px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+.component-container.open {
+  animation: slideDown 0.5s forwards;
+}
+
+.component-container.closed {
+  animation: slideUp 0.5s forwards;
+}
+
+/* Enhancing buttons further */
+.dev-mode button:disabled {
+  background-color: #0d8bf1;
+  cursor: not-allowed;
+}
+
+.dev-mode button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0d8bf1;
+}
+
+/* Styling for better readability */
+.dev-mode .input-group input::placeholder {
+  color: #AAA;
+}
+
+.dev-mode .input-group input:focus::placeholder {
+  color: #FFF;
+}
+
+/* Additional Improvements */
+.dev-mode button {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.dev-mode button:focus {
+  outline: none;
+}
+
+.dev-mode h2 {
+  border-bottom: 2px solid #1da1f2;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}

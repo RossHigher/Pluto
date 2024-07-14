@@ -1,0 +1,108 @@
+/* DirectoryViewer Styles */
+.directory-viewer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  background-color: #15202b;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  color: #1da1f2;
+}
+
+.directory-container {
+  flex: 1 1 calc(33.333% - 40px); /* Three columns layout */
+  background-color: #0d1a17;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.directory-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.directory-v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.directory-v .icon {
+  font-size: 36px;
+  color: #1da1f2;
+  margin-bottom: 10px;
+}
+
+.directory-v span {
+  font-size: 16px;
+  color: #1da1f2;
+  text-align: center;
+}
+
+.files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.file-item {
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.file-item:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.file-item .icon {
+  font-size: 24px;
+  color: #1da1f2;
+  margin-bottom: 5px;
+}
+
+.file-item span {
+  font-size: 7px;
+  color: #1da1f2;
+  text-align: center;
+}
+
+.download-button {
+  background-color: #1da1f2;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+  background-color: #0d8bf1;
+  transform: scale(1.05);
+}
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  color: #1da1f2;
+  width: 100%;
+}

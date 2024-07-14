@@ -1,0 +1,15 @@
+Алгоритм,Наибольшая сумма,N,M
+Crone_Mod,138.95,29,200
+Critical_Path_Less-Crone,139.1,29,200
+Critical_Path_Greater-Crone,139.18,29,200
+Pashkeev_Greater-Crone,139.21,29,200
+Pashkeev_Less-Crone,139.3,29,200
+Pashkeev-Crone,139.43,29,200
+Crone,139.45,29,200
+Critical_Path-Crone,139.59,29,200
+Pashkeev_Greater,141.02,29,200
+Pashkeev_Less,148.84,29,200
+Critical_Path,153.47,29,200
+Pashkeev,172.3,29,200
+Critical_Path_Greater,174.02,29,200
+Critical_Path_Less,179.06,29,200

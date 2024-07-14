@@ -1,0 +1,111 @@
+/* Import custom font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Header Styles */
+.header {
+  background-color: #1da1f2; /* Twitter blue */
+  color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1002;
+  border-bottom: 2px solid #1da1f2;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 40px;
+  margin-right: 20px;
+  color: #ffffff;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.dev-mode-button,
+.directory-viewer-button,
+.upload-gen-data-button {
+  background-color: #ffffff;
+  color: #1da1f2;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin-left: 10px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.dev-mode-button svg,
+.directory-viewer-button svg,
+.upload-gen-data-button svg {
+  margin-right: 8px;
+}
+
+.dev-mode-button:hover,
+.directory-viewer-button:hover,
+.upload-gen-data-button:hover {
+  background-color: #e8f5fe;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dev-mode-button:focus,
+.directory-viewer-button:focus,
+.upload-gen-data-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #1da1f2;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  .logo-icon {
+    font-size: 35px;
+  }
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .dev-mode-button, .directory-viewer-button, .upload-gen-data-button {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+}
