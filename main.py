@@ -19,8 +19,8 @@ session = boto3.session.Session()
 s3 = session.client(
     service_name='s3',
     endpoint_url='https://storage.yandexcloud.net', 
-    aws_access_key_id='YCAJE6ImYoePo5puS8MMCuPyK', 
-    aws_secret_access_key='YCMC-lfDg_UEM5Y28C-v3ZI_l5m-Ak8dYfta74rP'
+    aws_access_key_id='***************', 
+    aws_secret_access_key='*************************'
 )
 
 makeEssentionalDirs()
